@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductDetail: View {
+    @EnvironmentObject private var store: Store
+    @State private var showingAlert: Bool = false
     let product: Product
     @State private var quantity: Int = 1
     
@@ -17,6 +19,9 @@ struct ProductDetail: View {
             orderView
         }
         .edgesIgnoringSafeArea(.top) // 기본적으로 뷰는 SafeArea를 기준으로 레이아웃이 구성되지만, 지정한 방향의 안전 영역을 무시할 수 있음
+        .alert(isPresented: $showingAlert, content: {
+            confirmAlert
+        })
     }
     
     var productImage: some View {
@@ -83,7 +88,9 @@ struct ProductDetail: View {
     }
     
     var placeOrderButton: some View {
-        Button(action: {}) {
+        Button(action: {
+            self.showingAlert = true
+        }) {
             Capsule()
                 .fill(Color.peach)
                 // 너비는 주어진 공간을 최대로 사용하고 높이는 최소, 최대치 지정
@@ -94,6 +101,20 @@ struct ProductDetail: View {
                     .foregroundColor(.white))
                 .padding(.vertical, 8)
         }
+    }
+    
+    var confirmAlert: Alert{
+        Alert(title: Text("주문 확인"),
+              message: Text("\(product.name)을 \(quantity)개 구매하겠습니까?"),
+              primaryButton: .default(Text("확인"), action: {
+                //주문 기능
+                self.placeOrder()
+              }),
+              secondaryButton: .cancel(Text("취소")))
+    }
+    
+    func placeOrder(){
+        store.placeOrder(product: product, quantity: quantity)
     }
     
     // 한 문장으로 길게 구성된 상품 설명 문장을 적절하게 두줄로 나누어주는 기능
@@ -117,6 +138,7 @@ struct ProductDetail: View {
 struct ProductDetail_Previews: PreviewProvider {
     static var previews: some View {
         ProductDetail(product: productSamples[2])
+            .environmentObject(Store())
             
     }
 }

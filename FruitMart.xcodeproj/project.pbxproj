@@ -21,6 +21,7 @@
 		EB77445925B43F3400BF1103 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445825B43F3400BF1103 /* Preview.swift */; };
 		EB77445C25B44EEA00BF1103 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445B25B44EEA00BF1103 /* QuantitySelector.swift */; };
 		EB77445F25B4549100BF1103 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445E25B4549100BF1103 /* FavoriteButton.swift */; };
+		EB77446625B45D4800BF1103 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77446525B45D4800BF1103 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EB77445825B43F3400BF1103 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		EB77445B25B44EEA00BF1103 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
 		EB77445E25B4549100BF1103 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		EB77446525B45D4800BF1103 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				EB0D4DD425B080E3000F04C5 /* Product.swift */,
 				EB77444F25B4174000BF1103 /* Store.swift */,
+				EB77446525B45D4800BF1103 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				EB0D4DDB25B080FA000F04C5 /* ColorExtension.swift in Sources */,
 				EB0D4DCD25B080BB000F04C5 /* Home.swift in Sources */,
 				EB0D4DAF25B07FF6000F04C5 /* FruitMartApp.swift in Sources */,
+				EB77446625B45D4800BF1103 /* Order.swift in Sources */,
 				EB0D4DD525B080E3000F04C5 /* Product.swift in Sources */,
 				EB77445C25B44EEA00BF1103 /* QuantitySelector.swift in Sources */,
 				EB77445925B43F3400BF1103 /* Preview.swift in Sources */,

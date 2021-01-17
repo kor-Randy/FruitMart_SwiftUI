@@ -24,11 +24,10 @@ struct Home: View {
                     ProductRow(product: product)
                         .environmentObject(store)
                 }
-                //네비게이션 링크보다 FavoriteButton이 먼저 동작하는 방법(1)
-                //buttonStyle() 수식어를 생략하면 그 자식 뷰에서 구현된 버튼보다 먼저 상호 작용 우선권을 가짐
+                // 네비게이션 링크보다 FavoriteButton이 먼저 동작하는 방법(1)
+                // buttonStyle() 수식어를 생략하면 그 자식 뷰에서 구현된 버튼보다 먼저 상호 작용 우선권을 가짐
 //                .buttonStyle(PlainButtonStyle())
             }
-
             .navigationTitle("과일마트")
         }
     }
