@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Store {
+final class Store:  {
     var products: [Product]
 
     init(filename: String = "ProductData.json") {

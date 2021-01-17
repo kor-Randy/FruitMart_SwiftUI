@@ -19,7 +19,7 @@ struct Home: View {
 
         NavigationView {
             List(store.products) { product in
-                NavigationLink(destination: Text("상세 정보")) {
+                NavigationLink(destination: ProductDetail(product: product)) {
                     ProductRow(product: product)
                 }
             }
@@ -31,6 +31,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
+//        Preview(source: Home(store: Store()))
         Home(store: Store())
     }
 }
