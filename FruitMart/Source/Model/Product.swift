@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Product: Decodable, Identifiable {
+struct Product: Decodable, Identifiable, Equatable {
     let id: UUID = UUID() // identifiable 프로토콜 준수
     let name: String
     let imageName: String

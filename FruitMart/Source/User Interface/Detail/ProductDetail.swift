@@ -57,10 +57,11 @@ struct ProductDetail: View {
                 Spacer()
                 
                 // 즐겨찾기 버튼
-                Image(systemName: "heart")
-                    .imageScale(.large)
-                    .foregroundColor(Color.peach)
-                    .frame(width: 32, height: 32)
+//                Image(systemName: "heart")
+//                    .imageScale(.large)
+//                    .foregroundColor(Color.peach)
+//                    .frame(width: 32, height: 32)
+                FavoriteButton(product: product)
             }
             // 상품 설명, 아래 내용 참고
             Text(splitText(product.description))
@@ -116,5 +117,6 @@ struct ProductDetail: View {
 struct ProductDetail_Previews: PreviewProvider {
     static var previews: some View {
         ProductDetail(product: productSamples[2])
+            
     }
 }

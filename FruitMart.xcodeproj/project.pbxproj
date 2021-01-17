@@ -20,6 +20,7 @@
 		EB77445525B41D9800BF1103 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445425B41D9800BF1103 /* ProductDetail.swift */; };
 		EB77445925B43F3400BF1103 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445825B43F3400BF1103 /* Preview.swift */; };
 		EB77445C25B44EEA00BF1103 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445B25B44EEA00BF1103 /* QuantitySelector.swift */; };
+		EB77445F25B4549100BF1103 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445E25B4549100BF1103 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EB77445425B41D9800BF1103 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		EB77445825B43F3400BF1103 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		EB77445B25B44EEA00BF1103 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
+		EB77445E25B4549100BF1103 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				EB0D4DCC25B080BB000F04C5 /* Home.swift */,
 				EB0D4DD025B080C8000F04C5 /* ProductRow.swift */,
 				EB77445B25B44EEA00BF1103 /* QuantitySelector.swift */,
+				EB77445E25B4549100BF1103 /* FavoriteButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				EB0D4DD525B080E3000F04C5 /* Product.swift in Sources */,
 				EB77445C25B44EEA00BF1103 /* QuantitySelector.swift in Sources */,
 				EB77445925B43F3400BF1103 /* Preview.swift in Sources */,
+				EB77445F25B4549100BF1103 /* FavoriteButton.swift in Sources */,
 				EB77444D25B4162D00BF1103 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
