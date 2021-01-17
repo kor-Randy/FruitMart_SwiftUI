@@ -11,14 +11,20 @@ import SwiftUI
 struct Home: View {
     let store: Store
     var body: some View {
-        //List는 Identifiable 프로토콜 또는 그것을 대체한 id 값을 지정해줘야 함
-        //매번 Product 타입을 다룰 때마다 id를 지정해주기보다는
-        //Identifiable 프로토콜을 채택하는 것이 낫다
-        //Product.swift에 채택
-        //List(store.products, id: \.name)
-        
-        List(store.products) { product in
-            ProductRow(product: product)
+        // List는 Identifiable 프로토콜 또는 그것을 대체한 id 값을 지정해줘야 함
+        // 매번 Product 타입을 다룰 때마다 id를 지정해주기보다는
+        // Identifiable 프로토콜을 채택하는 것이 낫다
+        // Product.swift에 채택
+        // List(store.products, id: \.name)
+
+        NavigationView {
+            List(store.products) { product in
+                NavigationLink(destination: Text("상세 정보")) {
+                    ProductRow(product: product)
+                }
+            }
+
+            .navigationTitle("과일마트")
         }
     }
 }

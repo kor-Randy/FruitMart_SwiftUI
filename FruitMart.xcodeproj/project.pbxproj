@@ -17,6 +17,7 @@
 		EB0D4DDF25B0815A000F04C5 /* ProductData.json in Resources */ = {isa = PBXBuildFile; fileRef = EB0D4DDE25B0815A000F04C5 /* ProductData.json */; };
 		EB77444D25B4162D00BF1103 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77444C25B4162D00BF1103 /* BundleExtension.swift */; };
 		EB77445025B4174000BF1103 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77444F25B4174000BF1103 /* Store.swift */; };
+		EB77445525B41D9800BF1103 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77445425B41D9800BF1103 /* ProductDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EB0D4DDE25B0815A000F04C5 /* ProductData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductData.json; sourceTree = "<group>"; };
 		EB77444C25B4162D00BF1103 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		EB77444F25B4174000BF1103 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		EB77445425B41D9800BF1103 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		EB0D4DC925B080A3000F04C5 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				EB77445325B41D8800BF1103 /* Detail */,
 				EB0D4DCB25B080B0000F04C5 /* Home */,
 			);
 			path = "User Interface";
@@ -157,6 +160,14 @@
 				EB77444C25B4162D00BF1103 /* BundleExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EB77445325B41D8800BF1103 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EB77445425B41D9800BF1103 /* ProductDetail.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			files = (
 				EB77445025B4174000BF1103 /* Store.swift in Sources */,
 				EB0D4DD125B080C8000F04C5 /* ProductRow.swift in Sources */,
+				EB77445525B41D9800BF1103 /* ProductDetail.swift in Sources */,
 				EB0D4DDB25B080FA000F04C5 /* ColorExtension.swift in Sources */,
 				EB0D4DCD25B080BB000F04C5 /* Home.swift in Sources */,
 				EB0D4DAF25B07FF6000F04C5 /* FruitMartApp.swift in Sources */,
